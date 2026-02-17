@@ -26,9 +26,20 @@ a:hover {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+.profile-picture {
+    max-width: 150px;
+    height: auto;
+    filter: grayscale(100%) contrast(1.2);
+    border: 2px solid var(--text-color);
+    padding: 4px;
 }
 
 h1 {
