@@ -5,111 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyunjun Kim</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="left-pane">
-            <div class="profile">
-                <h1>Hyunjun Kim</h1>
-                <p>AI Research Scientist</p>
-            </div>
-            <nav class="navigation">
+    <header>
+        <h1>Hyunjun Kim</h1>
+        <p>AI Research Scientist</p>
+        <div class="contact-info">
+            <a href="mailto:hjun20.kim@icloud.com">Email</a>
+            <a href="https://www.linkedin.com/in/hyunjun-kim/" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=68YPP8wAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Experienced in writing high performance GPU kernels, tuning NPU compiler optimizations, and deploying on-device AI models, backed by a deep understanding of hardware architectures. Skilled at bridging software and hardware to deliver performance-optimized solutions across heterogeneous platforms through advanced profiling and performance analysis.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="entry">
+                <h3>Staff Researcher</h3>
+                <p class="meta">Samsung Advanced Institute of Technology (SAIT) | Suwon, Republic of Korea | Feb 2022 - Present</p>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li>Distributed Inference System Optimization: Leading research on optimizing distributed LLM inference (vLLM).</li>
+                    <li>Autotuner: Developed an automated performance tuning framework for mobile NPU compilers.</li>
+                    <li>On-Device LLM Inference Optimization: Improved compiler and runtime optimization heuristics to accelerate on-device LLM inference.</li>
+                    <li>Deep Learning Compiler: Developed an MLIR-based graph compiler targeting Samsung's mobile NPU series.</li>
                 </ul>
-            </nav>
-            <div class="contact">
-                <a href="mailto:hjun20.kim@icloud.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/hyunjun-kim/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://scholar.google.com/citations?user=68YPP8wAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                
             </div>
-        </aside>
-        <main class="right-pane">
-            <section id="about">
-                <h2><i class="fas fa-user"></i>About Me</h2>
-                <p>
-                    Experienced in writing high performance GPU kernels, tuning NPU compiler optimizations, and deploying on-device AI models, backed by a deep understanding of hardware architectures. Skilled at bridging software and hardware to deliver performance-optimized solutions across heterogeneous platforms through advanced profiling and performance analysis.
-                </p>
-            </section>
+            <div class="entry">
+                <h3>Staff Engineer</h3>
+                <p class="meta">Samsung Electronics | Suwon, Republic of Korea | Sep 2020 - Jan 2022</p>
+                <ul>
+                    <li>On-Device AI Model Deployment: Optimized inference latency through leveraging heterogeneous ML accelerators and model compression.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3>Postdoctoral Researcher</h3>
+                <p class="meta">IT Convergence Center @ SKKU | Suwon, Republic of Korea | Mar 2020 - Aug 2020</p>
+                <ul>
+                    <li>Unified Virtual Memory (UVM) Optimization: Extended Ph.D. research on Unified Virtual Memory (UVM) in GPUs.</li>
+                </ul>
+            </div>
+             <div class="entry">
+                <h3>Research Assistant</h3>
+                <p class="meta">ARCS Lab. @ SKKU | Suwon, Republic of Korea | Mar 2013 - Feb 2020</p>
+                <ul>
+                    <li>Researched GPU kernel optimization, implemented a source-to-source transpiler, and utilized GPU profiling tools.</li>
+                </ul>
+            </div>
+        </section>
 
-            <section id="experience">
-                <h2><i class="fas fa-briefcase"></i>Experience</h2>
-                <div class="entry">
-                    <h3>Staff Researcher</h3>
-                    <p class="meta">Samsung Advanced Institute of Technology (SAIT) | Suwon, Republic of Korea | Feb 2022 - Present</p>
-                    <ul>
-                        <li><strong>Distributed Inference System Optimization:</strong> Leading research on optimizing distributed LLM inference (vLLM) by applying metaheuristic search and AI-driven methodologies to identify optimal execution strategies.</li>
-                        <li><strong>Autotuner:</strong> Developed an automated performance tuning framework for mobile NPU compilers (MLIR and proprietary) by integrating exact methods with meta-heuristic search.</li>
-                        <li><strong>On-Device LLM Inference Optimization:</strong> Improved compiler and runtime optimization heuristics to accelerate on-device LLM inference, enabling Samsung's first on-device LLM deployment on the Galaxy S24.</li>
-                        <li><strong>Deep Learning Compiler:</strong> Developed an MLIR-based graph compiler targeting Samsung's mobile NPU series.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <h3>Staff Engineer</h3>
-                    <p class="meta">Samsung Electronics | Suwon, Republic of Korea | Sep 2020 - Jan 2022</p>
-                    <ul>
-                        <li><strong>On-Device AI Model Deployment:</strong> Optimized inference latency through leveraging heterogeneous ML accelerators (GPU, NPU, DSP) and applied model compression and quantization techniques.</li>
-                    </ul>
-                </div>
-                <div class="entry">
-                    <h3>Postdoctoral Researcher</h3>
-                    <p class="meta">IT Convergence Center @ SKKU | Suwon, Republic of Korea | Mar 2020 - Aug 2020</p>
-                    <ul>
-                        <li><strong>Unified Virtual Memory (UVM) Optimization:</strong> Extended Ph.D. research on Unified Virtual Memory (UVM) in GPUs.</li>
-                    </ul>
-                </div>
-                 <div class="entry">
-                    <h3>Research Assistant</h3>
-                    <p class="meta">ARCS Lab. @ SKKU | Suwon, Republic of Korea | Mar 2013 - Feb 2020</p>
-                    <ul>
-                        <li>Researched GPU kernel optimization, implemented a source-to-source transpiler, and utilized GPU profiling tools.</li>
-                    </ul>
-                </div>
-            </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="entry">
+                <h3>Ph.D. in Computer Engineering</h3>
+                <p class="meta">Sungkyunkwan University (SKKU), Republic of Korea | Mar 2013 - Feb 2020</p>
+            </div>
+            <div class="entry">
+                <h3>Bachelor of Engineering in Computer Engineering</h3>
+                <p class="meta">Sungkyunkwan University (SKKU), Republic of Korea | Mar 2007 - Feb 2013</p>
+            </div>
+        </section>
 
-            <section id="education">
-                <h2><i class="fas fa-graduation-cap"></i>Education</h2>
-                <div class="entry">
-                    <h3>Ph.D. in Computer Engineering</h3>
-                    <p class="meta">Sungkyunkwan University (SKKU), Republic of Korea | Mar 2013 - Feb 2020</p>
-                </div>
-                <div class="entry">
-                    <h3>Bachelor of Engineering in Computer Engineering</h3>
-                    <p class="meta">Sungkyunkwan University (SKKU), Republic of Korea | Mar 2007 - Feb 2013</p>
-                </div>
-            </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Hong, S., Kim, H. & Han, H. Compile-Time QoS Scheme for Deep Learning Inferences. The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'25), Nov 2025.</li>
+                <li>Kim, H. & Han, H. GPU thread throttling for page-level thrashing reduction via static analysis. Journal of Supercomputing, May 2024.</li>
+                <li>Jung, H. et al. Accelerating Deep Neural Networks on Mobile Multicore NPUs. IEEE/ACM International Symposium on Code Generation and Optimization (CGO' 23), Feb 2023.</li>
+                <li>Lee, H. et al. Idempotence-Based Preemptive GPU Kernel Scheduling for Embedded Systems. IEEE Transactions on Computers, Vol. 70(3), pp. 332-346, Mar 2021.</li>
+                <li>Park, D., Kim, H. & Han, H. Page Reuse in Cyclic Thrashing of GPU Under Oversubscription: WiP. Int'l Conf. on Compilers, Architecture, and Synthesis for Embedded Systems (CASES), Sep 2020.</li>
+                <li>Kim, H., Kim, H. & Han, H. Effective Profiling for Data-Intensive GPU Programs: WiP. Int'l Conf. on Compilers, Architecture, and Synthesis for Embedded Systems (CASES), Sep 2020.</li>
+                <li>Kim, H. et al. Static Code Transformations for Thread-Dense Memory Accesses in GPU Computing. Concurrency and Computation: Practice and Experience, Vol. 32(5), e5512, Wiley, Mar 10, 2020.</li>
+                <li>Kim, H. Compiler Orchestrated On-Chip Memory Optimizations for GPU Computing. PhD Thesis, Dept. of ECE, SKKU, Feb 2020.</li>
+                <li>Kim, H. et al. Compiler-Assisted GPU Thread Throttling for Reduced Cache Contention. Int'l Conf. on Parallel Processing (ICPP), Aug 2019.</li>
+                <li>Kim, H. et al. Compiler-Assisted Preloading in the Shared Memory for Thread-Dense Memory Requests. Workshop on Extreme-Scale Programming Tools held in conjunction with SC17, also in LNCS Vol. 11027, Nov 2017.</li>
+                <li>Hong, S., Kim, H. & Han, H. Balanced Cache Bypassing for Critical Warp Reduction: WiP. Int'l Conf. on Compilers, Architecture, and Synthesis for Embedded Systems (CASES), Oct 2017.</li>
+            </ul>
+            <a href="https://scholar.google.com/citations?user=68YPP8wAAAAJ&hl=en" target="_blank" class="full-list-link">View full publication list on Google Scholar</a>
+        </section>
 
-            <section id="publications">
-                <h2><i class="fas fa-book"></i>Selected Publications</h2>
-                <div class="entry">
-                    <ul>
-                        <li><strong>SC'25:</strong> Compile-Time QoS Scheme for Deep Learning Inferences.</li>
-                        <li><strong>J. of Supercomputing:</strong> GPU thread throttling for page-level thrashing reduction via static analysis.</li>
-                        <li><strong>CGO'23:</strong> Accelerating Deep Neural Networks on Mobile Multicore NPUs.</li>
-                    </ul>
-                    <a href="https://scholar.google.com/citations?user=68YPP8wAAAAJ&hl=en" target="_blank" class="full-list-link">View full publication list on Google Scholar <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h2><i class="fas fa-cogs"></i>Skills & Keywords</h2>
-                <div class="tags">
-                    <span>AI accelerators (GPU, Mobile NPU)</span>
-                    <span>Kernel programming (CUDA, Triton)</span>
-                    <span>Inference engine (vLLM)</span>
-                    <span>Compiler (MLIR, LLVM)</span>
-                    <span>Profiler (Nsight, Perfetto)</span>
-                    <span>Python, C/C++</span>
-                    <span>Optimization (DP, ILP, GA, Beam-search)</span>
-                </div>
-            </section>
-        </main>
-    </div>
+        <section id="skills">
+            <h2>Skills & Keywords</h2>
+            <div class="tags">
+                <span>AI accelerators (GPU, Mobile NPU)</span>
+                <span>Kernel programming (CUDA, Triton)</span>
+                <span>Inference engine (vLLM)</span>
+                <span>Compiler (MLIR, LLVM)</span>
+                <span>Profiler (Nsight, Perfetto)</span>
+                <span>Python, C/C++</span>
+                <span>Optimization (DP, ILP, GA, Beam-search)</span>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
