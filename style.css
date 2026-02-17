@@ -35,9 +35,9 @@ header {
 }
 
 .profile-picture {
-    max-height: 120px; /* Adjusted height */
-    width: auto; /* Allow width to adjust proportionally */
-    object-fit: cover; /* Crop if necessary to fit height */
+    height: 120px; /* Set fixed height */
+    width: 120px;  /* Set fixed width to create a square */
+    object-fit: cover; /* Crop the image to fill the square */
     filter: grayscale(100%) sepia(50%) contrast(1.2); /* Enhanced retro filter */
     border: 2px solid var(--text-color);
     padding: 4px;
