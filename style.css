@@ -1,0 +1,183 @@
+/* General Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #ffffff;
+    --pane-background: #f8f9fa;
+    --text-color: #333333;
+    --meta-text-color: #777777;
+    --border-color: #e9ecef;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Pane */
+.left-pane {
+    width: 35%;
+    max-width: 400px;
+    background-color: var(--pane-background);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid var(--border-color);
+}
+
+.profile h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.profile p {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+}
+
+.contact a {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Right Pane */
+.right-pane {
+    flex-grow: 1;
+    padding: 40px 60px;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 40px;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+h2 .fas {
+    margin-right: 15px;
+    color: var(--secondary-color);
+}
+
+.entry {
+    margin-bottom: 25px;
+}
+
+.entry h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.entry .meta {
+    font-size: 0.9em;
+    color: var(--meta-text-color);
+    margin-bottom: 10px;
+}
+
+.entry ul {
+    padding-left: 20px;
+}
+
+.full-list-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.full-list-link:hover {
+    text-decoration: underline;
+}
+
+/* Skills */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-pane {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        box-sizing: border-box;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .right-pane {
+        padding: 30px;
+    }
+    
+    .profile h1 {
+        font-size: 2em;
+    }
+}
